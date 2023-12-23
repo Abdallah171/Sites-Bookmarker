@@ -51,12 +51,12 @@ show();
 
 function deleteData(i) {
     arr.splice(i, 1);
+    localStorage.bookmarks = JSON.stringify(arr);
     show();
 }
 
 
 function visitt(i) {
-    console.log(i);
 
 }
 
